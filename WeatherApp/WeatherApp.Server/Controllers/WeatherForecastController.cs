@@ -6,6 +6,7 @@ namespace WeatherApp.Server.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        //Summaries to randomly grab from
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -18,16 +19,21 @@ namespace WeatherApp.Server.Controllers
             _logger = logger;
         }
 
+        //[Http{Get/Put/Post/Delete}(Name = unnecessary)
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        //IEnumberable<T> returns a collection of objects of type<T>
+        public WeatherForecast Get()  
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            //returns and WeatherForecast[5]
+            return new WeatherForecast
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                //date is set from 1-5 days from current day
+                Date = DateOnly.FromDateTime(DateTime.Now),
+                //generates random temp from -20-55C, Farenheit temp is generated off Celsius
                 TemperatureC = Random.Shared.Next(-20, 55),
+                //grabs random string from Summaries[]
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            };
         }
     }
 }
