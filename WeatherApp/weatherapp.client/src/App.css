@@ -1,19 +1,17 @@
-﻿#root {
+﻿/*#root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
 }
+*/
 
-tr:nth-child(even) {
+/*tr:nth-child(even) {
     background: #0A0A0A;
 }
 
 tr:nth-child(odd) {
     background: #0A0A0A;
 }
-
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
+*/
 }
