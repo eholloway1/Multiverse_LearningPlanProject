@@ -51,10 +51,36 @@ li.NavButton:hover{
     background-color: #808080;
 }
 
-#CurrentTemp {
-    margin: 0px;
-    padding: 0px;
-    font-size: 75px;
+#Weather {
+    display: gird;
+    /*box-sizing: content-box;*/
+    /*width: 60vw;*/
+    /*flex-direction: column;*/
+    /*background-color: gray;*/
+}
+
+#CurrentTemp{
+    /*margin: 0px;
+    padding: 0px;*/
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 80px;
+}
+
+#Temp_Emoji {
+    display: inline-flex;
+    padding-top: 0px;
+    margin-top: 0px;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 60vw;
+}
+
+#WeatherEmoji {
+    font-size: 70px;
+    align-self: flex-end;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #WeatherSummary{
