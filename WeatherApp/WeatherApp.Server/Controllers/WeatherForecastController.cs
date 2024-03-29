@@ -14,8 +14,9 @@ namespace WeatherApp.Server.Controllers
 
         private static readonly string[] Emojis = new[]
         {
-            "& #x1F603"
+            "\U00002601", "\U000026C5", "\U000026C8", "\U0001F324", "\U0001F327", "\U0001F328", "\U0001F32B"
         };
+
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -37,7 +38,7 @@ namespace WeatherApp.Server.Controllers
                 TemperatureC = Random.Shared.Next(-20, 55),
                 //grabs random string from Summaries[]
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)],
-                Emoji = Emojis[0]
+                Emoji = Emojis[Random.Shared.Next(Emojis.Length)]
             };
         }
     }
