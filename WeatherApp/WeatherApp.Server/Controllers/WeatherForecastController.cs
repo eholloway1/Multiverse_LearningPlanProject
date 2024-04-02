@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
+using WeatherApp.Server.Models;
 
 namespace WeatherApp.Server.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("WeatherForecast")]
     public class WeatherForecastController : ControllerBase
     {
         //Summaries to randomly grab from
@@ -25,9 +26,9 @@ namespace WeatherApp.Server.Controllers
         }
 
         //[Http{Get/Put/Post/Delete}(Name = unnecessary)
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "WeatherForecast")]
         //IEnumberable<T> returns a collection of objects of type<T>
-        public WeatherForecast Get()  
+        public async Task<WeatherForecast> Get()  
         {
             //returns and WeatherForecast[5]
             return new WeatherForecast
