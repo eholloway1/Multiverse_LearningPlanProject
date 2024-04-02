@@ -1,4 +1,4 @@
-namespace WeatherApp.Server
+namespace WeatherApp.Server.Models
 {
     public class WeatherForecast
     {

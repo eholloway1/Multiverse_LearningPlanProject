@@ -459,24 +459,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eholloway\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jumpi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\WeatherApp.Server.csproj",
+      "projectUniqueName": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\WeatherApp.Server.csproj",
       "projectName": "WeatherApp.Server",
-      "projectPath": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\WeatherApp.Server.csproj",
-      "packagesPath": "C:\\Users\\eholloway\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\obj\\",
+      "projectPath": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\WeatherApp.Server.csproj",
+      "packagesPath": "C:\\Users\\jumpi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eholloway\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jumpi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -535,7 +534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,3 +1,6 @@
+using Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns;
+using WeatherApp.Server.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,6 +28,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapFallbackToFile("/index.html");
+
+//app.MapFallbackToFile("/index.html");
 
 app.Run();
