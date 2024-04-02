@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\",
+  "WorkspaceRootPath": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|solutionrelative:weatherapp.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\components\\sevendayweather.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|solutionrelative:weatherapp.client\\src\\components\\sevendayweather.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\components\\localweather.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\components\\localweather.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|solutionrelative:weatherapp.client\\src\\components\\localweather.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|solutionrelative:weatherapp.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|solutionrelative:weatherapp.client\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\weatherapp.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\weatherapp.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\jumpi\\documents\\multiverse\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A80F4487-7BC5-4BD3-A779-9FE8A1D1FCD1}|weatherapp.client\\weatherapp.client.esproj|solutionrelative:weatherapp.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\controllers\\sevendayforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\controllers\\sevendayforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\models\\sevendayforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\models\\sevendayforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|c:\\users\\eholloway\\documents\\codio_shop\\multiverse_learningplanproject\\weatherapp\\weatherapp.server\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2BB491-A2D1-40F2-AEAB-8AD91D6EE7AF}|WeatherApp.Server\\WeatherApp.Server.csproj|solutionrelative:weatherapp.server\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,105 +45,108 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocalWeather.tsx",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\Components\\LocalWeather.tsx",
+              "RelativeDocumentMoniker": "weatherapp.client\\src\\Components\\LocalWeather.tsx",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\Components\\LocalWeather.tsx",
+              "RelativeToolTip": "weatherapp.client\\src\\Components\\LocalWeather.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-02T18:47:31.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "vite.config.ts",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\vite.config.ts",
-              "RelativeDocumentMoniker": "weatherapp.client\\vite.config.ts",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\vite.config.ts",
-              "RelativeToolTip": "weatherapp.client\\vite.config.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAYAAAA",
+              "Title": "SevendayWeather.tsx",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\Components\\SevendayWeather.tsx",
+              "RelativeDocumentMoniker": "weatherapp.client\\src\\Components\\SevendayWeather.tsx",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\Components\\SevendayWeather.tsx",
+              "RelativeToolTip": "weatherapp.client\\src\\Components\\SevendayWeather.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-02T03:37:36.624Z",
+              "WhenOpened": "2024-04-02T17:03:09.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\index.css",
+              "RelativeDocumentMoniker": "weatherapp.client\\src\\index.css",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\index.css",
+              "RelativeToolTip": "weatherapp.client\\src\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-02T18:46:01.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "WeatherApp.Server.http",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\WeatherApp.Server.http",
-              "RelativeDocumentMoniker": "WeatherApp.Server\\WeatherApp.Server.http",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\WeatherApp.Server.http",
-              "RelativeToolTip": "WeatherApp.Server\\WeatherApp.Server.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-04-02T03:33:18.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.tsx",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\main.tsx",
-              "RelativeDocumentMoniker": "weatherapp.client\\src\\main.tsx",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\main.tsx",
-              "RelativeToolTip": "weatherapp.client\\src\\main.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-02T01:23:41.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Program.cs",
-              "RelativeDocumentMoniker": "WeatherApp.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Program.cs",
-              "RelativeToolTip": "WeatherApp.Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "SevendayForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Controllers\\SevendayForecastController.cs",
+              "RelativeDocumentMoniker": "WeatherApp.Server\\Controllers\\SevendayForecastController.cs",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Controllers\\SevendayForecastController.cs",
+              "RelativeToolTip": "WeatherApp.Server\\Controllers\\SevendayForecastController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwDIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T23:21:13.116Z"
+              "WhenOpened": "2024-04-02T16:43:42.421Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAKAAAA",
+              "Title": "SevendayForecast.cs",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Models\\SevendayForecast.cs",
+              "RelativeDocumentMoniker": "WeatherApp.Server\\Models\\SevendayForecast.cs",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Models\\SevendayForecast.cs",
+              "RelativeToolTip": "WeatherApp.Server\\Models\\SevendayForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T23:18:33.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Models\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WeatherApp.Server\\Models\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Models\\WeatherForecast.cs",
-              "RelativeToolTip": "WeatherApp.Server\\Models\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T22:58:02.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocalWeather.tsx",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\Components\\LocalWeather.tsx",
-              "RelativeDocumentMoniker": "weatherapp.client\\src\\Components\\LocalWeather.tsx",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\Components\\LocalWeather.tsx",
-              "RelativeToolTip": "weatherapp.client\\src\\Components\\LocalWeather.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-04-01T19:34:45.019Z"
+              "WhenOpened": "2024-04-02T16:06:12.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Models\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherApp.Server\\Models\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Models\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherApp.Server\\Models\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T22:58:02.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "App.tsx",
-              "DocumentMoniker": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\App.tsx",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\App.tsx",
               "RelativeDocumentMoniker": "weatherapp.client\\src\\App.tsx",
-              "ToolTip": "C:\\Users\\jumpi\\Documents\\multiverse\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\weatherapp.client\\src\\App.tsx",
               "RelativeToolTip": "weatherapp.client\\src\\App.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAWAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwE0AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-03-27T15:15:01.403Z"
+              "WhenOpened": "2024-03-27T15:15:01.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\eholloway\\Documents\\Codio_shop\\Multiverse_LearningPlanProject\\WeatherApp\\WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WeatherApp.Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T23:18:33.132Z",
+              "EditorCaption": ""
             }
           ]
         }
