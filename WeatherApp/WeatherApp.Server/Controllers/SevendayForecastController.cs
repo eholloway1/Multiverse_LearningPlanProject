@@ -1,0 +1,71 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using WeatherApp.Server.Models;
+
+namespace WeatherApp.Server.Controllers
+{
+        [ApiController]
+        [Route("weatherforecast/sevenday")]
+        public class SevendayForecastController : ControllerBase
+        {
+            //Summaries to randomly grab from
+            private static readonly string[] Summaries = new[]
+            {
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
+
+            private static readonly string[] Emojis = new[]
+            {
+            "\U00002601", "\U000026C5", "\U000026C8", "\U0001F324", "\U0001F327", "\U0001F328", "\U0001F32B"
+        };
+
+            private readonly ILogger<SevendayForecastController> _logger;
+
+            public SevendayForecastController(ILogger<SevendayForecastController> logger)
+            {
+                _logger = logger;
+            }
+
+            //[Http{Get/Put/Post/Delete}(Name = unnecessary)
+            [HttpGet]
+            //IEnumberable<T> returns a collection of objects of type<T>
+            public async Task<SevendayForecast> Get()
+            {
+                DateOnly[] tempDate = new DateOnly[7];
+                for (int i = 0; i < tempDate.Length; i++)
+                {
+                    tempDate[i] = DateOnly.FromDateTime(DateTime.Now.AddDays(i));
+                }
+
+                int[] TempF = new int[7];
+                for (int i = 0; i < TempF.Length; i++)
+                {
+                    TempF[i] = Random.Shared.Next(-20, 55);
+                }
+
+                string[] tempSumm = new string[7];
+                for (int i = 0; i < tempSumm.Length; i++)
+                {
+                    tempSumm[i] = Summaries[Random.Shared.Next(Summaries.Length)];
+                }
+
+                string[] tempEmo = new string[7];
+                for (int i = 0; i < tempEmo.Length; i++)
+                {
+                    tempEmo[i] = Emojis[Random.Shared.Next(Emojis.Length)];
+                }
+
+                //returns and WeatherForecast[5]
+                return new SevendayForecast
+                {
+                    //date is set from 1-5 days from current day
+                    Date = tempDate,
+                    //generates random temp from -20-55C, Farenheit temp is generated off Celsius
+                    TemperatureF = TempF,
+                    //grabs random string from Summaries[]
+                    Summary = tempSumm,
+                    Emoji = tempEmo
+                };
+            }
+        }
+
+}
