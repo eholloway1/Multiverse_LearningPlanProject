@@ -47,12 +47,19 @@ button.NavButton{
 #GridWarp{
 }
 
+.weatherImage {
+    /*transform: rotate(90deg);*/
+    scale: 70%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
 /*.WX_Report{
     grid-column-start: 1;
     grid-column-end: 3;
 }
 */
-.WeatherCard{
+.WeatherCard {
     /*box-sizing: border-box;*/
     margin: 12px;
     /*background-size: cover;
@@ -60,7 +67,9 @@ button.NavButton{
     grid-column-start: 2;
     grid-column-end: 4;
     border: 1px solid white;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .WeatherCards {
@@ -78,8 +87,12 @@ button.NavButton{
 }
 
 .Temp_Emoji {
-    display: flex;
+/*    display: flex;
     justify-content: space-between;
+   */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
     padding-top: 0px;
     margin-top: 0px;
 }
