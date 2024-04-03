@@ -4,6 +4,7 @@ import LocalWeather from './Components/LocalWeather';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import SevendayWeather from './Components/SevendayWeather';
+import { Transform } from 'stream';
 
 interface Forecast {
     date: string;
@@ -20,29 +21,48 @@ interface Sevenday {
     emoji: string[];
 }
 
+interface TrueForecast {
+    dateTime: string;
+    phrase: string;
+    iconCode: number;
+    hasPrecipitiation: boolean;
+    isDayTime: boolean;
+    temperature: Temp;
+}
+interface Temp {
+    value: number;
+    unit: string;
+    unitType: number;
+}
+
 const App: React.FC = () => {
 
 
-    const [forecasts, setForecasts] = useState<Forecast>(null);
     const [weeklyForecast, setWeeklyForecast] = useState<Sevenday>(null);
     const [localCity, setLocalCity] = useState<string>("");
     const [singleView, setSingleView] = useState<boolean>(true);
+    const [theForecast, setTheForecast] = useState<TrueForecast>(null);
+    const [weatherLink, setWeatherLink] = useState<string>('');
 
     async function populateWeatherData() {
         const response = await fetch('weatherforecast');
         const data = await response.json();
-        setForecasts(data);
+        const res = await fetch("https://atlas.microsoft.com/weather/currentConditions/json?api-version=1.1&query=47.6061,122.3328&details=false&subscription-key=MlibwupNzWRsCHlFw2G25Jhv1_ZrxTCY0la7Quiu0Io");
+        let data2 = await res.json();
+        data2 = data2.results[0];
+        
         setLocalCity("Seattle");
         setSingleView(true);
         setWeeklyForecast(null);
+        setTheForecast(data2);
+        setWeatherLink(`https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/${theForecast.iconCode.toString().padStart(2, '0')}-s.png`);
     }
-
     async function populateWeeklyData() {
         const response = await fetch('weatherforecast/sevenday');
         const data = await response.json();
         setWeeklyForecast(data);
         setSingleView(false);
-        setForecasts(null);
+        setTheForecast(null);
     }
 
     useEffect(() => {
@@ -82,8 +102,8 @@ const App: React.FC = () => {
             <div>
                 <div className="MainContents">
                     {
-                        forecasts ?
-                        <LocalWeather date={forecasts.date} temperatureF={forecasts.temperatureF} summary={forecasts.summary} emoji={forecasts.emoji} localCity={localCity} />
+                        theForecast ?
+                            <LocalWeather dateTime={theForecast.dateTime.substring(0, 10)} phrase={theForecast.phrase} weatherImage={weatherLink} hasPrecipitiation={theForecast.hasPrecipitiation} isDayTime={theForecast.isDayTime} temperature={theForecast.temperature.value} localCity={localCity} />
                             : singleView ?
                                 <h1>Loading...</h1>
                                 : <SevendayWeather date={weeklyForecast.date} temperatureF={weeklyForecast.temperatureF} summary={weeklyForecast.summary} emoji={weeklyForecast.emoji} localCity={localCity} />
