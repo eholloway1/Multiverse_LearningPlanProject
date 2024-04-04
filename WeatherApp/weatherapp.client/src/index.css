@@ -116,3 +116,14 @@ button.NavButton{
     margin: 0px;
 }
 
+.FiveDayHighLow{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.FiveDayHeader {
+    margin: 12px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
