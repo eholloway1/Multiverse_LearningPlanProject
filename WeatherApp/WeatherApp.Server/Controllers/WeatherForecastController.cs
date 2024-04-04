@@ -25,19 +25,13 @@ namespace WeatherApp.Server.Controllers
             _logger = logger;
         }
 
-        //[Http{Get/Put/Post/Delete}(Name = unnecessary)
         [HttpGet]
-        //IEnumberable<T> returns a collection of objects of type<T>
         public async Task<WeatherForecast> Get()  
         {
-            //returns and WeatherForecast[5]
             return new WeatherForecast
             {
-                //date is set from 1-5 days from current day
                 Date = DateOnly.FromDateTime(DateTime.Now),
-                //generates random temp from -20-55C, Farenheit temp is generated off Celsius
                 TemperatureC = Random.Shared.Next(-20, 55),
-                //grabs random string from Summaries[]
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)],
                 Emoji = Emojis[Random.Shared.Next(Emojis.Length)]
             };

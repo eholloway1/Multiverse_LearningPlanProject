@@ -25,9 +25,7 @@ namespace WeatherApp.Server.Controllers
                 _logger = logger;
             }
 
-            //[Http{Get/Put/Post/Delete}(Name = unnecessary)
             [HttpGet]
-            //IEnumberable<T> returns a collection of objects of type<T>
             public async Task<SevendayForecast> Get()
             {
                 DateOnly[] tempDate = new DateOnly[7];
@@ -54,14 +52,10 @@ namespace WeatherApp.Server.Controllers
                     tempEmo[i] = Emojis[Random.Shared.Next(Emojis.Length)];
                 }
 
-                //returns and WeatherForecast[5]
                 return new SevendayForecast
                 {
-                    //date is set from 1-5 days from current day
                     Date = tempDate,
-                    //generates random temp from -20-55C, Farenheit temp is generated off Celsius
                     TemperatureF = TempF,
-                    //grabs random string from Summaries[]
                     Summary = tempSumm,
                     Emoji = tempEmo
                 };

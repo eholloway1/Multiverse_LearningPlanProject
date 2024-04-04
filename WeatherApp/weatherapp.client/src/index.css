@@ -11,14 +11,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/** {
-    border: 1px dashed red;
-}
-*/
 .MainContents {
     display: grid;
     grid-template-columns: minmax(6, 1fr) 40vw;
-    /*grid-column-gap: 12px;*/
     max-width: 60vw;
 }
 
@@ -48,22 +43,12 @@ button.NavButton{
 }
 
 .weatherImage {
-    /*transform: rotate(90deg);*/
-    scale: 70%;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
-/*.WX_Report{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-*/
 .WeatherCard {
-    /*box-sizing: border-box;*/
     margin: 12px;
-    /*background-size: cover;
-    grid-column: span 12;*/
     grid-column-start: 2;
     grid-column-end: 4;
     border: 1px solid white;
@@ -73,9 +58,6 @@ button.NavButton{
 }
 
 .WeatherCards {
-    /*margin: 12px auto !important;*/
-    /*background-size: cover;
-    grid-column: span 12;*/
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -87,9 +69,6 @@ button.NavButton{
 }
 
 .Temp_Emoji {
-/*    display: flex;
-    justify-content: space-between;
-   */
     display: flex;
     flex-direction: row;
     justify-content: space-between;  

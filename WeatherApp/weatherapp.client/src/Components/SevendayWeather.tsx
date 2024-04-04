@@ -1,11 +1,11 @@
 interface Props {
     date: string;
-    //temperatureC: number;
     minTemp: number;
     maxTemp: number;
     unit: string;
 }
 
+/*------------------------------Five-day Weather Component------------------------------------------------------------*/
 
 const SevendayWeather = (props: Props) => {
 

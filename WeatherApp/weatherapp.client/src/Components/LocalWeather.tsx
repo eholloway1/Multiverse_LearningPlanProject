@@ -1,4 +1,3 @@
-//import { useState, useEffect} from "react";
 
 interface Props {
     dateTime: string;
@@ -10,12 +9,9 @@ interface Props {
     localCity: string;
     unit: string;
 }
-interface Temp {
-    value: number;
-    unit: string;
-    unitType: number;
-}
 
+
+/*------------------------------Current Weather Component------------------------------------------------------------*/
 
 const LocalWeather = (props: Props) => {
 
