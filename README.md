@@ -36,3 +36,9 @@ Project Idea:
   		○ Daily forecast statistics, I.e. rain chance, pollen count, visibility, etc.
 
   MVP WireFrame: https://wireframe.cc/D0OW5P
+
+---------------------------------How-to Use-------------------------------------------
+1. Open the WeathApp.sln
+2. Run the Debugger
+3. The localhost site will open, the weather is defaulted to Seattle, Wa
+4. You can see the current weather or 5-day forecast for any US city by entering it into the search bar (adding a state with the city will give you more accurate data)
