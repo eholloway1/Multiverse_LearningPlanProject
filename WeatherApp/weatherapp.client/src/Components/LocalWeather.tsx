@@ -8,6 +8,7 @@ interface Props {
     isDayTime: boolean;
     temperature: number;
     localCity: string;
+    unit: string;
 }
 interface Temp {
     value: number;
@@ -21,10 +22,10 @@ const LocalWeather = (props: Props) => {
 
     return (
         <div className="WeatherCard">
-            <h2 className="CurrentLocale">{props.localCity} Weather for {props.dateTime}</h2>
+            <h2 className="CurrentLocale">Current weather for {props.localCity}</h2>
 
             <span className="Temp_Emoji">
-                <h1 className="CurrentTemp">{props.temperature}</h1>
+                <h1 className="CurrentTemp">{props.temperature}&deg;{props.unit}</h1>
                 <img src={props.weatherImage} class="weatherImage"></img>
             </span>
 

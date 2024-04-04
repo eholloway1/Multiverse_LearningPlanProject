@@ -1,18 +1,9 @@
 //import { useEffect, useState } from 'react';
 import './App.css';
 import LocalWeather from './Components/LocalWeather';
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import SevendayWeather from './Components/SevendayWeather';
-import { Transform } from 'stream';
 
-interface Forecast {
-    date: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary: string;
-    emoji: string;
-}
 interface Sevenday {
     date: string[];
     //temperatureC: number;
@@ -35,39 +26,92 @@ interface Temp {
     unitType: number;
 }
 
-const App: React.FC = () => {
+interface cityLocation {
+    position: coordinates;
+}
+
+interface coordinates {
+    lon: number;
+    lat: number;
+}
+
+interface FivedayForecast {
+    date: string;
+    temperature: FivedayTemp;
+}
+
+interface FivedayTemp {
+    minimum: Temp;
+    maximum: Temp;
+}
+
+const App = () => {
 
 
-    const [weeklyForecast, setWeeklyForecast] = useState<Sevenday>(null);
-    const [localCity, setLocalCity] = useState<string>("");
+    const [localCity, setLocalCity] = useState<string>("Seattle, WA");
+    const [searchCity, setSearchCity] = useState<string>("");
+    const [searchCityLocation, setSearchCityLocation] = useState<cityLocation | null>(null);
     const [singleView, setSingleView] = useState<boolean>(true);
-    const [theForecast, setTheForecast] = useState<TrueForecast>(null);
-    const [weatherLink, setWeatherLink] = useState<string>('');
+    const [theForecast, setTheForecast] = useState<TrueForecast | null>(null);
+    const [fivedayForecast, setFivedayForecast] = useState<FivedayForecast[]>();
+    const [unitType, setUnitType] = useState<string>("metric");
 
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        const data = await response.json();
-        const res = await fetch("https://atlas.microsoft.com/weather/currentConditions/json?api-version=1.1&query=47.6061,122.3328&details=false&subscription-key=MlibwupNzWRsCHlFw2G25Jhv1_ZrxTCY0la7Quiu0Io");
-        let data2 = await res.json();
-        data2 = data2.results[0];
-        
-        setLocalCity("Seattle");
-        setSingleView(true);
-        setWeeklyForecast(null);
-        setTheForecast(data2);
-        setWeatherLink(`https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/${theForecast.iconCode.toString().padStart(2, '0')}-s.png`);
+    async function populateWeatherData(lon = 47.6061, lat = -122.332) {
+        const res = await fetch(`https://atlas.microsoft.com/weather/currentConditions/json?api-version=1.1&query=${lon},${lat}&unit=${unitType}&details=false&subscription-key=MlibwupNzWRsCHlFw2G25Jhv1_ZrxTCY0la7Quiu0Io`)
+            .then(res => res.json())
+            .then(data => setTheForecast(data.results[0]));
+        //const data = await res.json().then(data => 
+        //    setTheForecast(data.results[0])
+        //).then(() => {
+            setSingleView(true);
+            setFivedayForecast(null);
+//        });
+//;
+
+        //data = data.results[0];
+    //    setSingleView(true);
+    //    setWeeklyForecast(null);
+    //    setTheForecast(data.results[0]);
+    //    setWeatherLink(`https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/${theForecast.iconCode.toString().padStart(2, '0')}-s.png`);
     }
-    async function populateWeeklyData() {
-        const response = await fetch('weatherforecast/sevenday');
+
+    async function populateWeeklyData(lon = 47.6061, lat = -122.332, unit = `metric`) {
+        const response = await fetch(`https://atlas.microsoft.com/weather/forecast/daily/json?api-version=1.1&query=${lon},${lat}&unit=${unitType}&details=false&duration=5&subscription-key=MlibwupNzWRsCHlFw2G25Jhv1_ZrxTCY0la7Quiu0Io`);
         const data = await response.json();
-        setWeeklyForecast(data);
+        setFivedayForecast(data.forecasts);
+
+        //setWeeklyForecast(data);
         setSingleView(false);
         setTheForecast(null);
     }
 
+    async function searchWeatherData() {
+        const response = await fetch(`https://atlas.microsoft.com/search/address/json?api-version=1.0&query=${searchCity}&countrySet=US&limit=1&subscription-key=MlibwupNzWRsCHlFw2G25Jhv1_ZrxTCY0la7Quiu0Io`)
+            .then(response => response.json())
+            .then(data =>
+                setSearchCityLocation(data.results[0])
+        ).finally(() => 
+            //setTheForecast(null);
+            setLocalCity(searchCity)
+        )/*.then(() => populateWeatherData(searchCityLocation.position.lat, searchCityLocation.position.lon))*/;
+
+        //const data = await response.json().then(data => {
+        //    setSearchCityLocation(data.results[0])
+        //    setLocalCity(searchCity);
+        //});
+        //setSearchCityLocation(data.results[0]);
+    }
+
+
     useEffect(() => {
-        populateWeatherData();
-    }, []);
+        if (searchCityLocation) {
+            populateWeatherData(searchCityLocation.position.lat, searchCityLocation.position.lon);
+        }
+        else {
+            populateWeatherData();
+
+        }
+    }, [searchCityLocation, unitType]);
 
 
 
@@ -78,12 +122,43 @@ const App: React.FC = () => {
 
     const todayClick = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
-        populateWeatherData();
+        if (searchCityLocation) {
+            populateWeatherData(searchCityLocation.position.lat, searchCityLocation.position.lon);
+        }
+        else {
+            populateWeatherData();
+
+        }
     };
 
     const thisWeekClick = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
-        populateWeeklyData();
+        if (searchCityLocation) {
+            populateWeeklyData(searchCityLocation.position.lat, searchCityLocation.position.lon);
+        }
+        else {
+            populateWeeklyData();
+        }
+
+    }
+
+    const tripleClick = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        searchWeatherData();
+        populateWeatherData(searchCityLocation.position.lat, searchCityLocation.position.lon);
+    }
+
+    const FarenheitToggle = (e: React.MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        if (unitType != "imperial") {
+            setUnitType("imperial");
+        }
+    }
+    const CelciusToggle = (e: React.MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        if (unitType != "metric") {
+            setUnitType("metric");
+        }
     }
 
     return (
@@ -95,18 +170,30 @@ const App: React.FC = () => {
 
             <div>
                 <ul className="NavBar">
-                    <li><button onClick={ todayClick }>Today</button></li>
-                    <li className="NavButton"><button onClick = { thisWeekClick }>This Week</button></li>
-                 </ul>
+                    <li className="NavButton"><button onClick={FarenheitToggle}>Farenheit</button></li>
+                    <li className="NavButton"><button onClick={ CelciusToggle }>Celcius</button></li>
+                    <li className="NavButton"><button onClick={ todayClick }>Today</button></li>
+                    <li className="NavButton"><button onClick={thisWeekClick}>5-day forecast</button></li>
+                    <li>
+                        <form onSubmit={tripleClick}>
+                            <input type="text" name="City" placeholder="Search for weather" onChange={e => setSearchCity(e.target.value)} />
+                            <button type="submit">Search City</button>
+                        </form>
+                    </li>
+                </ul>
+
             </div>
             <div>
                 <div className="MainContents">
                     {
                         theForecast ?
-                            <LocalWeather dateTime={theForecast.dateTime.substring(0, 10)} phrase={theForecast.phrase} weatherImage={weatherLink} hasPrecipitiation={theForecast.hasPrecipitiation} isDayTime={theForecast.isDayTime} temperature={theForecast.temperature.value} localCity={localCity} />
+                            <LocalWeather dateTime={theForecast.dateTime.substring(0, 10)} phrase={theForecast.phrase} weatherImage={`https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/${theForecast.iconCode.toString().padStart(2, '0')}-s.png`} hasPrecipitiation={theForecast.hasPrecipitiation} isDayTime={theForecast.isDayTime} temperature={theForecast.temperature.value} localCity={localCity} unit={theForecast.temperature.unit} />
                             : singleView ?
                                 <h1>Loading...</h1>
-                                : <SevendayWeather date={weeklyForecast.date} temperatureF={weeklyForecast.temperatureF} summary={weeklyForecast.summary} emoji={weeklyForecast.emoji} localCity={localCity} />
+                                : <>
+                                    <h1 className="FiveDayHeader">5-day forecast for {localCity}</h1>
+                                    {fivedayForecast?.map(item => <SevendayWeather date={item.date.substring(0, 10)} minTemp={item.temperature.minimum.value} maxTemp={item.temperature.maximum.value} unit={item.temperature.maximum.unit} />)}
+                                </>
                     }
                 </div>
             </div>
