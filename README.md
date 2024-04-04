@@ -8,6 +8,7 @@ Welcome to my Weather App repo, the project for my Mutliverse final project. In 
 The MVP docs can be found as follows:
 
 Project Idea:
+
 	1. Weather App
 		a. MVP
   		○ Temp for one or two made-up city reports
