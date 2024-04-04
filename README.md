@@ -5,7 +5,6 @@ The Weather App!
 Welcome to my Weather App repo, the project for my Mutliverse final project. In this repo you will find the solution file for my Weather (React)App, written in C#.
 
 ---------------------------------Fun stuff-------------------------------------------
-The MVP docs can be found as follows:
 
 Project Idea:
 
